@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "8b603c4d-1761-485e-94ca-c5948ccf9051",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"PROD00002\",\r\n    \"nombre\": \"Yoghurt\",\r\n    \"descripcion\": \"Lacteo\",\r\n    \"precio\": 490\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/products/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"strictSSL": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/products/findall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"products",
+						"findall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"strictSSL": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/products/find/62d6cb531d6eccc722b12af1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"products",
+						"find",
+						"62d6cb531d6eccc722b12af1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"PROD00002\",\r\n    \"nombre\": \"Leche\",\r\n    \"descripcion\": \"Lacteo\",\r\n    \"precio\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/products/update/62d6cb141d6eccc722b12aef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"products",
+						"update",
+						"62d6cb141d6eccc722b12aef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/products/delete/62d6cb141d6eccc722b12aef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"products",
+						"delete",
+						"62d6cb141d6eccc722b12aef"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
